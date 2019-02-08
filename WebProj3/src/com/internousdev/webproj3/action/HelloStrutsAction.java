@@ -21,6 +21,8 @@ public class HelloStrutsAction extends ActionSupport{
 
 		if(result.equals("Mysqlと接続できます")){
 			ret=SUCCESS;
+		}else{
+			ret=ERROR;
 		}
 		return ret;
 	}
