@@ -1,0 +1,7 @@
+package com.internousdev.webproj2.dao;
+
+public class InquiryCompleteDAO {
+	public int insert(String name, String Qtype, String body){
+		int ret = 0;
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
