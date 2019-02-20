@@ -12,9 +12,9 @@
 <s:submit value="HelloStruts"/>
 </s:form>
 
-<form action="WelcomeAction">
+<s:form action="WelcomeAction">
  <s:submit value="Welcome"/>
- </form>
+ </s:form>
 
  <s:form action="InquiryAction">
   <s:submit value="HelloStruts"/>

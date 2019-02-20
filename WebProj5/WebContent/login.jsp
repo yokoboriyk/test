@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<s:property values="session.loginDTOList.get(0).username"/>さんようこそ
+<s:property value="#session.loginDTOList.get(0).username"/>さんようこそ
 
 <br>
 
@@ -22,9 +22,9 @@
  </tr>
 
  <tr>
-  <s:iterator values="#session.loginDTOList">
-   <td><s:property values="username"/>
-   <td><s:property values="password"/></td>
+  <s:iterator value="#session.loginDTOList">
+   <td><s:property value="username"/>
+   <td><s:property value="password"/></td>
    </s:iterator>
    </tr>
    </tbody>
