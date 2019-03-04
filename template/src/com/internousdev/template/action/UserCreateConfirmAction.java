@@ -39,7 +39,7 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 	public String getLoginPassword(){
 		return loginPassword;
 	}
-	public void setLoginPasswords(String loginPassword){
+	public void setLoginPassword(String loginPassword){
 		this.loginPassword = loginPassword;
 	}
 
