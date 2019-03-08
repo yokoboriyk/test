@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.internousdev.temlate.util.DBConnector;
 import com.internousdev.template.dto.MyPageDTO;
+import com.internousdev.template.util.DBConnector;
 
 public class MyPageDAO {
 

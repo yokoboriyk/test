@@ -1,4 +1,4 @@
-package com.internousdev.temlate.util;
+package com.internousdev.template.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

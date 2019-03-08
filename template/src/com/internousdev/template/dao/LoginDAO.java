@@ -4,8 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import com.internousdev.temlate.util.DBConnector;
 import com.internousdev.template.dto.LoginDTO;
+import com.internousdev.template.util.DBConnector;
 
 public class LoginDAO {
 
@@ -14,7 +14,7 @@ public class LoginDAO {
 		DBConnector dbConnector = new DBConnector();
 		Connection connection = dbConnector.getConnection();
 		LoginDTO loginDTO = new LoginDTO();
-		String sql = "From login_user_transaction where login_id = ? AND login_pass = ?";
+		String sql = "SELECT * From login_user_transaction where login_id = ? AND login_pass = ?";
 
 		try{
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -23,9 +23,15 @@ public class LoginDAO {
 			preparedStatement.setString(2, loginPassword);
 
 			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()){
+				loginDTO.setLoginId(resultSet.getString("login_id"));
+				loginDTO.setLoginPassword(resultSet.getString("login_pass"));
+				loginDTO.setUserName(resultSet.getString("user_name"));
+
 
 			if(!(resultSet.getString("login_id").equals(null))){
 				loginDTO.setLoginFlg(true);
+			}
 			}
 
 		}catch(Exception e){

@@ -4,8 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import com.internousdev.temlate.util.DBConnector;
 import com.internousdev.template.dto.BuyItemDTO;
+import com.internousdev.template.util.DBConnector;
 
 public class BuyItemDAO {
 

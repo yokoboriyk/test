@@ -1,4 +1,4 @@
-package com.internousdev.temlate.util;
+package com.internousdev.template.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
