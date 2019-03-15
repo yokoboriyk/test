@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="S" uri="/struts-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,7 +27,7 @@ background:#fff;
 
 table{
 text-align:center;
-margin:0auto;
+margin:0 auto;
 }
 
 #top{
@@ -37,13 +37,13 @@ border:1px solid #333;
 }
 
 #header{
-width: 100px;
+width: 100%;
 height: 80px;
 background-color: black;
 }
 
 #main{
-width: 100px;
+width: 100%;
 height: 500px;
 text-align:center;
 }
@@ -87,7 +87,7 @@ clear:both;
          <span>値段</span>
        </td>
        <td>
-       <s;property values="session.buyItem_price" />
+       <s:property value="session.buyItem_price" />
          <span>円</span>
         </td>
       </tr>
