@@ -16,6 +16,17 @@ create table login_user_transaction(
  updated_date datetime
  );
 
+ drop table if exists item_info_transaction;
+
+ create table item_info_transaction(
+ id int not null primary key auto_increment,
+ item_name varchar(30),
+ item_price int,
+ item_stock int,
+ insert_date datetime,
+ update_date datetime
+ );
+
  drop table if exists user_buy_item_transaction;
 
  create table user_buy_item_transaction(
