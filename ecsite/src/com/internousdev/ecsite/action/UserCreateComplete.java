@@ -17,7 +17,7 @@ public class UserCreateComplete extends ActionSupport implements SessionAware{
 	private UserCreateCompleteDAO userCreateCompleteDAO = new UserCreateCompleteDAO();
 
 	public String execute() throws SQLException{
-		userCreateCompleteDAO.cerateUser(session.get("loginUserId").toString(),
+		userCreateCompleteDAO.createUser(session.get("loginUserId").toString(),
 				session.get("loginPassword").toString(),
 				session.get("userName").toString());
 
@@ -31,6 +31,24 @@ public class UserCreateComplete extends ActionSupport implements SessionAware{
 	}
 	public void setLoginUserId(String loginUserId){
 		this.loginUserId = loginUserId;
+	}
+
+	public String getLoginPassword(){
+		return loginPassword;
+	}
+	public void setLoginPassword(String loginPassword){
+		this.loginPassword = loginPassword;
+	}
+
+	public String getUserName(){
+		return userName;
+	}
+	public void setUserName(String userName){
+		this.userName = userName;
+	}
+
+	public void setSession(Map<String,Object> session){
+		this.session = session;
 	}
 
 }

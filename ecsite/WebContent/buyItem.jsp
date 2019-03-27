@@ -15,7 +15,7 @@
 <style type="text/css">
 
 body{
-margin:0 auto;
+margin:0;
 padding:0;
 line-height:1.6;
 letter-spacing:1px;
@@ -37,7 +37,7 @@ border:1px solid #333;
 }
 
 #header{
-width:100px;
+width:100%;
 height:80px;
 background-color:black;
 }
