@@ -10,9 +10,8 @@ public class DateUtil {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/ddHH:mm:ss");
 		return simpleDateFormat.format(date);
 	}
-
 }
 
-public String getLoginPassword(){
-	return LoginPassword();
-}
+
+
+
