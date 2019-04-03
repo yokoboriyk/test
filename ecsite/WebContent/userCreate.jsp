@@ -74,7 +74,7 @@ clear:both;
       </s:if>
 
       <table>
-      <s:form action="UserCreateAction">
+      <s:form action="UserCreateConfirmAction">
         <tr>
           <td>
             <label>ログインID:</label>
@@ -106,7 +106,7 @@ clear:both;
 
       <div>
         <span>前画面に戻る場合は</span>
-        <a href='<url action="HomeAction" />'>こちら</a>
+        <a href='<s:url action="HomeAction" />'>こちら</a>
       </div>
     </div>
   </div>

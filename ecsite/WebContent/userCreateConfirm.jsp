@@ -70,13 +70,13 @@ clear:both;
       <div>
         <h3>登録する内容は以下でよろしいですか</h3>
         <table>
-          <s:form acton="UserCreateCompleteAction">
+          <s:form action="UserCreateCompleteAction">
           <tr id="box">
             <td>
               <label>ログインID:</label>
             </td>
             <td>
-              <s:property value="loginUsereId" escape="false" />
+              <s:property value="loginUserId" escape="false" />
             </td>
           </tr>
 
