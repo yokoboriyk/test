@@ -85,7 +85,7 @@ function submitAction(url){
 
         <tr>
           <td>購入個数</td>
-          <td><s:property value="sesssion.count" /><span>個</span></td>
+          <td><s:property value="session.count" /><span>個</span></td>
         </tr>
 
         <tr>
@@ -104,6 +104,10 @@ function submitAction(url){
           </tr>
         </s:form>
       </div>
+      <div>
+        <p>前画面に戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
+        <p>マイページは<a href='<s:url action="MyPageAction" />'>こちら</a></p>
+      </div>
     </div>
 
     <div id="footer">
@@ -115,6 +119,4 @@ function submitAction(url){
 </html>
 
 
-      <p>前画面に戻る場合は<a href='<s:url action="GoHomeAction" />'></a></p>
-      <p>マイページは<a href='<s:url action="MyPageAction" />'></a></p>
-    </div>
+

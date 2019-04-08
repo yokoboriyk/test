@@ -85,7 +85,7 @@ function submitAction(url){
 
         <tr>
           <td>購入個数</td>
-          <td><s:property value="sesssion.count" /><span>個</span></td>
+          <td><s:property value="session.count" /><span>個</span></td>
         </tr>
 
         <tr>

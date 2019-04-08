@@ -36,7 +36,7 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 	}
 
 	public void delete() throws SQLException{
-		String item_transaction_id = session.get("ID").toString();
+		String item_transaction_id = session.get("id").toString();
 		String user_master_id = session.get("login_user_id").toString();
 
 		int res = myPageDAO.buyItemHistoryDelete(item_transaction_id, user_master_id);
